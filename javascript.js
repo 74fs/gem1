@@ -1,8 +1,6 @@
 // ==================== SUPABASE CONFIG ====================
 // ⚠️ استبدلي الرابط أدناه بـ Project URL الخاص بك من Supabase Dashboard
-const SUPABASE_URL = 'https://supabase.com/dashboard/project/qxmauvhwvveoxdxowdwd/settings/general'; 
-
-// ✅ المفتاح العام (Publishable Key) - آمن 100% للمتصفح
+const SUPABASE_URL = 'https://qxmauvhwvveoxdxowdwd.supabase.co'; 
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_2BxHEYQ-RlUwvAMlM8VtUA_Y18z6bO-';
 
 // التحقق من صحة الرابط قبل التهيئة
