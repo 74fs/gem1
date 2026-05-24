@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فت ستايل | صالة رياضية نسائية - سلطنة عُمان</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar" id="navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">
+            <span class="logo-icon">🏋️‍♀️</span>
+            <span class="logo-text">فت ستايل</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#offers">العروض</a></li>
+            <li><a href="#classes">الحصص</a></li>
+            <li><a href="#trainers">المدربات</a></li>
+            <li><a href="#gallery">معرض الصور</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button class="btn btn-outline" onclick="openModal('loginModal')">
+                <i class="fas fa-sign-in-alt"></i> دخول
+            </button>
+            <button class="btn btn-primary" onclick="openModal('registerModal')">
+                <i class="fas fa-user-plus"></i> سجّلي الآن
+            </button>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- ==================== HERO SECTION ==================== -->
+<section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <div class="hero-badge">🇦🇴 صالة نسائية فقط - سلطنة عُمان</div>
+        <h1>اكتشفي <span class="highlight">قوتك</span> الداخلية</h1>
+        <p>انضمي إلى أفضل صالة رياضية نسائية في عُمان. بيئة محفزة، مدربات محترفات، وأحدث الأجهزة لتحقيق أهدافك.</p>
+        <div class="hero-buttons">
+            <button class="btn btn-primary btn-lg" onclick="openModal('registerModal')">
+                <i class="fas fa-dumbbell"></i> ابدئي رحلتك الآن
+            </button>
+            <a href="#offers" class="btn btn-outline btn-lg">
+                <i class="fas fa-tags"></i> شاهدي العروض
+            </a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number">+500</span>
+                <span class="stat-label">عضوة مسجلة</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">15</span>
+                <span class="stat-label">مدربة محترفة</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">+30</span>
+                <span class="stat-label">حصة أسبوعياً</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">4.9</span>
+                <span class="stat-label">تقييم العضوات</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ABOUT SECTION ==================== -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">من نحن</span>
+            <h2>لماذا <span class="highlight">فت ستايل</span>؟</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-card">
+                <div class="about-icon">🏋️‍♀️</div>
+                <h3>أحدث الأجهزة</h3>
+                <p>مجهزة بأفضل المعدات العالمية لتمارين الكارديو ورفع الأثقال والتمارين الوظيفية</p>
+            </div>
+            <div class="about-card">
+                <div class="about-icon">👩‍🏫</div>
+                <h3>مدربات معتمدات</h3>
+                <p>فريق من المدربات المعتمدات دولياً لمتابعتك في كل خطوة</p>
+            </div>
+            <div class="about-card">
+                <div class="about-icon">🧘‍♀️</div>
+                <h3>بيئة مريحة</h3>
+                <p>خصوصية تامة في أجواء أنيقة ومحفزة تساعدك على التركيز والتميز</p>
+            </div>
+            <div class="about-card">
+                <div class="about-icon">⏰</div>
+                <h3>ساعات مرنة</h3>
+                <p>مفتوحون يومياً من 6 صباحاً حتى 11 مساءً لتناسب جدولك</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== OFFERS & PRICING ==================== -->
+<section class="offers" id="offers">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">الأسعار والعروض</span>
+            <h2>اختاري <span class="highlight">الباقة</span> المناسبة</h2>
+        </div>
+        <div class="pricing-grid">
+            <!-- Monthly Basic -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>الباقة الأساسية</h3>
+                    <div class="price">
+                        <span class="amount">20</span>
+                        <span class="currency">ر.ع</span>
+                        <span class="period">/ شهرياً</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> استخدام صالة الحديد</li>
+                    <li><i class="fas fa-check"></i> منطقة الكارديو</li>
+                    <li><i class="fas fa-check"></i> غرف تبديل الملابس</li>
+                    <li><i class="fas fa-check"></i> واي فاي مجاني</li>
+                    <li class="disabled"><i class="fas fa-times"></i> الحصص الجماعية</li>
+                    <li class="disabled"><i class="fas fa-times"></i> مدربة شخصية</li>
+                </ul>
+                <button class="btn btn-outline btn-block" onclick="openModal('registerModal')">اشتركي الآن</button>
+            </div>
+            <!-- Monthly Premium (Featured) -->
+            <div class="pricing-card featured">
+                <div class="pricing-badge">⭐ الأكثر طلباً</div>
+                <div class="pricing-header">
+                    <h3>الباقة المميزة</h3>
+                    <div class="price">
+                        <span class="amount">35</span>
+                        <span class="currency">ر.ع</span>
+                        <span class="period">/ شهرياً</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> كل مميزات الأساسية</li>
+                    <li><i class="fas fa-check"></i> جميع الحصص الجماعية</li>
+                    <li><i class="fas fa-check"></i> برنامج تمرين أسبوعي</li>
+                    <li><i class="fas fa-check"></i> متابعه شهرية من مدربة</li>
+                    <li><i class="fas fa-check"></i> خصم 10% على المكملات</li>
+                    <li class="disabled"><i class="fas fa-times"></i> مدربة شخصية يومية</li>
+                </ul>
+                <button class="btn btn-primary btn-block" onclick="openModal('registerModal')">اشتركي الآن</button>
+            </div>
+            <!-- Annual VIP -->
+            <div class="pricing-card">
+                <div class="pricing-badge vip-badge">👑 VIP</div>
+                <div class="pricing-header">
+                    <h3>الباقة السنوية</h3>
+                    <div class="price">
+                        <span class="amount">300</span>
+                        <span class="currency">ر.ع</span>
+                        <span class="period">/ سنوياً</span>
+                    </div>
+                    <div class="savings">وفّري <strong>120 ر.ع</strong></div>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> كل مميزات المميزة</li>
+                    <li><i class="fas fa-check"></i> مدربة شخصية مرتين أسبوعياً</li>
+                    <li><i class="fas fa-check"></i> خطة تغذية مخصصة</li>
+                    <li><i class="fas fa-check"></i> دخول مجاني لضيافة</li>
+                    <li><i class="fas fa-check"></i> جلسات سبا شهرية</li>
+                    <li><i class="fas fa-check"></i> أولوية حجز الحصص</li>
+                </ul>
+                <button class="btn btn-outline btn-block" onclick="openModal('registerModal')">اشتركي الآن</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CLASSES ==================== -->
+<section class="classes" id="classes">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">حصص التدريب</span>
+            <h2>جدول <span class="highlight">الحصص</span> الأسبوعي</h2>
+        </div>
+        <div class="classes-filter">
+            <button class="filter-btn active" data-filter="all">الكل</button>
+            <button class="filter-btn" data-filter="cardio">كارديو</button>
+            <button class="filter-btn" data-filter="strength">قوة</button>
+            <button class="filter-btn" data-filter="yoga">يوغا</button>
+            <button class="filter-btn" data-filter="dance">رقص</button>
+        </div>
+        <div class="classes-grid">
+            <div class="class-card" data-category="strength">
+                <div class="class-time">السبت - 7:00 ص</div>
+                <div class="class-info">
+                    <h3>🔥 HIIT تدريب مكثف</h3>
+                    <p>تمارين عالية الكثافة لحرق الدهون</p>
+                    <span class="class-trainer">مدربة: نورة الحبسي</span>
+                </div>
+                <button class="btn btn-sm btn-outline">احجزي مقعدك</button>
+            </div>
+            <div class="class-card" data-category="yoga">
+                <div class="class-time">الأحد - 6:00 ص</div>
+                <div class="class-info">
+                    <h3>🧘‍♀️ يوغا صباحية</h3>
+                    <p>استرخاء ومرونة لبداية يوم مثالية</p>
+                    <span class="class-trainer">مدربة: ليلى البلوشية</span>
+                </div>
+                <button class="btn btn-sm btn-outline">احجزي مقعدك</button>
+            </div>
+            <div class="class-card" data-category="dance">
+                <div class="class-time">الإثنين - 5:00 م</div>
+                <div class="class-info">
+                    <h3>💃 زومبا فيتنس</h3>
+                    <p>تمارين رقص ممتعة لحرق السعرات</p>
+                    <span class="class-trainer">مدربة: مريم الريامية</span>
+                </div>
+                <button class="btn btn-sm btn-outline">احجزي مقعدك</button>
+            </div>
+            <div class="class-card" data-category="cardio">
+                <div class="class-time">الثلاثاء - 7:00 م</div>
+                <div class="class-info">
+                    <h3>🏃‍♀️ كارديو شوت</h3>
+                    <p>تمارين كارديو سريعة ومركزة</p>
+                    <span class="class-trainer">مدربة: سارة الكلبانية</span>
+                </div>
+                <button class="btn btn-sm btn-outline">احجزي مقعدك</button>
+            </div>
+            <div class="class-card" data-category="strength">
+                <div class="class-time">الأربعاء - 6:00 م</div>
+                <div class="class-info">
+                    <h3>💪 قوة وتحمل</h3>
+                    <p>تمارين الأثقال لبناء العضلات</p>
+                    <span class="class-trainer">مدربة: هند السعدي</span>
+                </div>
+                <button class="btn btn-sm btn-outline">احجزي مقعدك</button>
+            </div>
+            <div class="class-card" data-category="yoga">
+                <div class="class-time">الخميس - 8:00 ص</div>
+                <div class="class-info">
+                    <h3>🧘‍♀️ يوغا متقدمة</h3>
+                    <p>أوضاع متقدمة وتحكم في التنفس</p>
+                    <span class="class-trainer">مدربة: ليلى البلوشية</span>
+                </div>
+                <button class="btn btn-sm btn-outline">احجزي مقعدك</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== TRAINERS ==================== -->
+<section class="trainers" id="trainers">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">المدربات</span>
+            <h2>فريق <span class="highlight">المدربات</span> المحترفات</h2>
+        </div>
+        <div class="trainers-grid">
+            <div class="trainer-card">
+                <div class="trainer-avatar">👩‍🏫</div>
+                <div class="trainer-info">
+                    <h3>نورة الحبسي</h3>
+                    <span class="trainer-specialty">HIIT & CrossFit</span>
+                    <p>خبرة 8 سنوات | معتمدة من ACE</p>
+                    <div class="trainer-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="trainer-card">
+                <div class="trainer-avatar">🧘‍♀️</div>
+                <div class="trainer-info">
+                    <h3>ليلى البلوشية</h3>
+                    <span class="trainer-specialty">يوغا & بيلاتس</span>
+                    <p>خبرة 10 سنوات | معتمدة من Yoga Alliance</p>
+                    <div class="trainer-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="trainer-card">
+                <div class="trainer-avatar">💃</div>
+                <div class="trainer-info">
+                    <h3>مريم الريامية</h3>
+                    <span class="trainer-specialty">زومبا & رقص فيتنس</span>
+                    <p>خبرة 6 سنوات | معتمدة من Zumba®</p>
+                    <div class="trainer-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="trainer-card">
+                <div class="trainer-avatar">🏋️‍♀️</div>
+                <div class="trainer-info">
+                    <h3>سارة الكلبانية</h3>
+                    <span class="trainer-specialty">كارديو & لياقة عامة</span>
+                    <p>خبرة 5 سنوات | معتمدة من NASM</p>
+                    <div class="trainer-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>4.5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== GALLERY ==================== -->
+<section class="gallery" id="gallery">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">معرض الصور</span>
+            <h2>جولة داخل <span class="highlight">الجيم</span></h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item large">
+                <div class="gallery-placeholder">🏋️‍♀️<br>صالة الحديد</div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">🏃‍♀️<br>منطقة الكارديو</div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">🧘‍♀️<br>قاعة اليوغا</div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">💃<br>قاعة الرقص</div>
+            </div>
+            <div class="gallery-item large">
+                <div class="gallery-placeholder">🚿<br>غرف التبديل</div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">☕<br>منطقة الاستراحة</div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">👩‍👩‍👧‍👧<br>الحصص الجماعية</div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">💪<br>أثناء التمرين</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== TESTIMONIALS ==================== -->
+<section class="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">آراء العضوات</span>
+            <h2>ماذا تقول <span class="highlight">عضواتنا</span>؟</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-text">"أفضل جيم نسائي في مسقط! البيئة رائعة والمدربات محترفات. خسرت 15 كيلو في 4 أشهر."</div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">👩</div>
+                    <div>
+                        <strong>أمل الخميسي</strong>
+                        <span>عضوة منذ سنة</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-text">"الحصص الجماعية ممتازة وأجواء التدريب محفزة. أنصح كل بنت تنضم لهنا."</div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">👩</div>
+                    <div>
+                        <strong>فاطمة المعمري</strong>
+                        <span>عضوة منذ 6 أشهر</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-text">"الباقة السنوية تستاهل! المدربة الشخصية ساعدتني أوصل لهدفي أسرع."</div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">👩</div>
+                    <div>
+                        <strong>هند الشكيلية</strong>
+                        <span>عضوة VIP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">تواصل معنا</span>
+            <h2>نحن هنا <span class="highlight">لمساعدتك</span></h2>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>اتصلي بنا</h4>
+                        <p dir="ltr">+968 2456 7890</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>واتساب</h4>
+                        <p dir="ltr">+968 9123 4567</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>البريد الإلكتروني</h4>
+                        <p>info@fitstyle-oman.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>الموقع</h4>
+                        <p>شارع السلطان قابوس، مسقط، سلطنة عُمان</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>ساعات العمل</h4>
+                        <p>يومياً: 6:00 ص - 11:00 م</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <h3>أرسلي لنا رسالة</h3>
+                    <input type="text" placeholder="الاسم الكامل" required>
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                    <input type="tel" placeholder="رقم الهاتف">
+                    <textarea placeholder="رسالتك..." rows="4" required></textarea>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> إرسال الرسالة
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117699.975999!2d58.3!3d23.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8e7e!2sMuscat%2C+Oman!5e0!3m2!1sar!2som!4v1"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>🏋️‍♀️ فت ستايل</h3>
+                <p>أفضل صالة رياضية نسائية في سلطنة عُمان. بيئة آمنة ومحفزة لتحقيق أهدافك الصحية.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#offers">العروض</a></li>
+                    <li><a href="#classes">الحصص</a></li>
+                    <li><a href="#trainers">المدربات</a></li>
+                    <li><a href="#gallery">معرض الصور</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>خدماتنا</h4>
+                <ul>
+                    <li><a href="#">تدريب شخصي</a></li>
+                    <li><a href="#">حصص جماعية</a></li>
+                    <li><a href="#">خطط تغذية</a></li>
+                    <li><a href="#">استشارات صحية</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>الدعم</h4>
+                <ul>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">الشروط والأحكام</a></li>
+                    <li><a href="#">سياسة الاسترجاع</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 فت ستايل - جميع الحقوق محفوظة 🇴🇲</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ==================== LOGIN MODAL ==================== -->
+<div class="modal" id="loginModal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('loginModal')">&times;</button>
+        <h2>تسجيل الدخول 🔐</h2>
+        <form class="auth-form" id="loginForm">
+            <div class="form-group">
+                <label>البريد الإلكتروني</label>
+                <input type="email" id="loginEmail" placeholder="example@email.com" required>
+            </div>
+            <div class="form-group">
+                <label>كلمة المرور</label>
+                <input type="password" id="loginPassword" placeholder="••••••••" required>
+            </div>
+            <a href="#" class="forgot-link">نسيتِ كلمة المرور؟</a>
+            <button type="submit" class="btn btn-primary btn-block">
+                <i class="fas fa-sign-in-alt"></i> دخول
+            </button>
+        </form>
+        <p class="auth-switch">ما عندك حساب؟ <a href="#" onclick="switchModal('loginModal','registerModal')">سجّلي الآن</a></p>
+    </div>
+</div>
+
+<!-- ==================== REGISTER MODAL ==================== -->
+<div class="modal" id="registerModal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('registerModal')">&times;</button>
+        <h2>إنشاء حساب جديد ✨</h2>
+        <form class="auth-form" id="registerForm">
+            <div class="form-group">
+                <label>الاسم الكامل</label>
+                <input type="text" id="regName" placeholder="الاسم الكامل" required>
+            </div>
+            <div class="form-group">
+                <label>البريد الإلكتروني</label>
+                <input type="email" id="regEmail" placeholder="example@email.com" required>
+            </div>
+            <div class="form-group">
+                <label>رقم الهاتف</label>
+                <input type="tel" id="regPhone" placeholder="+968 XXXX XXXX" required>
+            </div>
+            <div class="form-group">
+                <label>كلمة المرور</label>
+                <input type="password" id="regPassword" placeholder="••••••••" required minlength="6">
+            </div>
+            <div class="form-group">
+                <label>تأكيد كلمة المرور</label>
+                <input type="password" id="regConfirmPassword" placeholder="••••••••" required>
+            </div>
+            <div class="form-group">
+                <label>الباقة المطلوبة</label>
+                <select id="regPlan">
+                    <option value="basic">الباقة الأساسية - 20 ر.ع/شهرياً</option>
+                    <option value="premium">الباقة المميزة - 35 ر.ع/شهرياً</option>
+                    <option value="vip">الباقة السنوية - 300 ر.ع/سنوياً</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+                <i class="fas fa-user-plus"></i> إنشاء الحساب
+            </button>
+        </form>
+        <p class="auth-switch">عندك حساب؟ <a href="#" onclick="switchModal('registerModal','loginModal')">سجّلي دخولك</a></p>
+    </div>
+</div>
+
+<!-- ==================== DASHBOARD MODAL (After Login) ==================== -->
+<div class="modal modal-large" id="dashboardModal">
+    <div class="modal-content dashboard-content">
+        <button class="modal-close" onclick="closeModal('dashboardModal')">&times;</button>
+        
+        <div class="dashboard-header">
+            <h2>👋 مرحباً، <span id="dashName">اسم العضوة</span></h2>
+            <button class="btn btn-outline" onclick="logout()">
+                <i class="fas fa-sign-out-alt"></i> تسجيل خروج
+            </button>
+        </div>
+
+        <div class="dashboard-tabs">
+            <button class="tab-btn active" onclick="showTab('overview')">📊 نظرة عامة</button>
+            <button class="tab-btn" onclick="showTab('membership')">💳 اشتراكي</button>
+            <button class="tab-btn" onclick="showTab('invoices')">🧾 فواتيري</button>
+            <button class="tab-btn" onclick="showTab('classes-booked')">🗓️ حجوزاتي</button>
+        </div>
+
+        <!-- Tab: Overview -->
+        <div class="tab-content active" id="tab-overview">
+            <div class="dash-stats">
+                <div class="dash-stat-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h4>حالة الاشتراك</h4>
+                    <span class="status-active">نشط ✅</span>
+                </div>
+                <div class="dash-stat-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h4>زيارات هذا الشهر</h4>
+                    <span>12 زيارة</span>
+                </div>
+                <div class="dash-stat-card">
+                    <i class="fas fa-fire"></i>
+                    <h4>حصص محجوزة</h4>
+                    <span>3 حصص</span>
+                </div>
+                <div class="dash-stat-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>انتهاء الاشتراك</h4>
+                    <span>25/07/2026</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Membership -->
+        <div class="tab-content" id="tab-membership">
+            <div class="membership-detail">
+                <h3>تفاصيل الاشتراك</h3>
+                <div class="membership-info">
+                    <div><strong>الباقة:</strong> <span id="dashPlan">المميزة</span></div>
+                    <div><strong>المبلغ:</strong> <span>35 ر.ع</span></div>
+                    <div><strong>تاريخ البدء:</strong> <span>25/05/2026</span></div>
+                    <div><strong>تاريخ الانتهاء:</strong> <span>25/07/2026</span></div>
+                    <div><strong>الحالة:</strong> <span class="status-active">نشط</span></div>
+                </div>
+                <button class="btn btn-primary" onclick="renewSubscription()">
+                    <i class="fas fa-sync-alt"></i> تجديد الاشتراك
+                </button>
+            </div>
+        </div>
+
+        <!-- Tab: Invoices -->
+        <div class="tab-content" id="tab-invoices">
+            <h3>🧾 سجل الفواتير</h3>
+            <div class="invoices-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>رقم الفاتورة</th>
+                            <th>التاريخ</th>
+                            <th>الوصف</th>
+                            <th>المبلغ</th>
+                            <th>الحالة</th>
+                            <th>إجراء</th>
+                        </tr>
+                    </thead>
+                    <tbody id="invoicesBody">
+                        <tr>
+                            <td>#INV-001</td>
+                            <td>25/05/2026</td>
+                            <td>اشتراك مميز - شهر</td>
+                            <td>35.000 ر.ع</td>
+                            <td><span class="badge paid">مدفوعة ✅</span></td>
+                            <td><button class="btn btn-sm btn-outline" onclick="downloadInvoice('INV-001')">
+                                <i class="fas fa-download"></i> تحميل PDF
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>#INV-002</td>
+                            <td>15/05/2026</td>
+                            <td>حصة تدريب شخصية</td>
+                            <td>10.000 ر.ع</td>
+                            <td><span class="badge paid">مدفوعة ✅</span></td>
+                            <td><button class="btn btn-sm btn-outline" onclick="downloadInvoice('INV-002')">
+                                <i class="fas fa-download"></i> تحميل PDF
+                            </button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Tab: Classes Booked -->
+        <div class="tab-content" id="tab-classes-booked">
+            <h3>🗓️ حجوزات الحصص القادمة</h3>
+            <div class="booked-classes">
+                <div class="booked-class-item">
+                    <div class="booked-class-time">السبت 31/05 - 7:00 ص</div>
+                    <h4>🔥 HIIT تدريب مكثف</h4>
+                    <span>مدربة: نورة الحبسي</span>
+                    <button class="btn btn-sm btn-outline">إلغاء الحجز</button>
+                </div>
+                <div class="booked-class-item">
+                    <div class="booked-class-time">الأحد 01/06 - 6:00 ص</div>
+                    <h4>🧘‍♀️ يوغا صباحية</h4>
+                    <span>مدربة: ليلى البلوشية</span>
+                    <button class="btn btn-sm btn-outline">إلغاء الحجز</button>
+                </div>
+                <div class="booked-class-item">
+                    <div class="booked-class-time">الإثنين 02/06 - 5:00 م</div>
+                    <h4>💃 زومبا فيتنس</h4>
+                    <span>مدربة: مريم الريامية</span>
+                    <button class="btn btn-sm btn-outline">إلغاء الحجز</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== ADMIN DASHBOARD ==================== -->
+<div class="modal modal-large" id="adminDashboardModal">
+    <div class="modal-content admin-dashboard">
+        <button class="modal-close" onclick="closeModal('adminDashboardModal')">&times;</button>
+        
+        <div class="dashboard-header">
+            <h2>🛡️ لوحة تحكم الإدارة</h2>
+            <button class="btn btn-outline" onclick="logout()">
+                <i class="fas fa-sign-out-alt"></i> خروج
+            </button>
+        </div>
+
+        <div class="admin-stats">
+            <div class="admin-stat-card">
+                <i class="fas fa-users"></i>
+                <h3>+520</h3>
+                <p>إجمالي العضوات</p>
+            </div>
+            <div class="admin-stat-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>485</h3>
+                <p>اشتراكات نشطة</p>
+            </div>
+            <div class="admin-stat-card">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <h3>12,450 ر.ع</h3>
+                <p>إيرادات الشهر</p>
+            </div>
+            <div class="admin-stat-card">
+                <i class="fas fa-calendar-check"></i>
+                <h3>34</h3>
+                <p>حصة هذا الأسبوع</p>
+            </div>
+        </div>
+
+        <div class="admin-actions">
+            <button class="btn btn-primary" onclick="showAdminSection('manage-members')">
+                <i class="fas fa-users-cog"></i> إدارة العضوات
+            </button>
+            <button class="btn btn-outline" onclick="showAdminSection('manage-classes')">
+                <i class="fas fa-calendar-plus"></i> إدارة الحصص
+            </button>
+            <button class="btn btn-outline" onclick="showAdminSection('manage-invoices')">
+                <i class="fas fa-file-invoice"></i> إدارة الفواتير
+            </button>
+            <button class="btn btn-outline" onclick="showAdminSection('manage-offers')">
+                <i class="fas fa-tags"></i> إدارة العروض
+            </button>
+            <button class="btn btn-outline" onclick="showAdminSection('reports')">
+                <i class="fas fa-chart-bar"></i> التقارير
+            </button>
+        </div>
+
+        <div class="admin-content" id="adminContent">
+            <div class="admin-section active" id="section-manage-members">
+                <h3>👩‍👩‍👧‍👧 إدارة العضوات</h3>
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>الاسم</th>
+                            <th>البريد</th>
+                            <th>الهاتف</th>
+                            <th>الباقة</th>
+                            <th>الحالة</th>
+                            <th>إجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>أمل الخميسي</td>
+                            <td>amal@email.com</td>
+                            <td>+968 9111 2222</td>
+                            <td>مميزة</td>
+                            <td><span class="badge paid">نشط</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-outline">تعديل</button>
+                                <button class="btn btn-sm btn-outline" style="color:#e74c3c;">حذف</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>فاطمة المعمري</td>
+                            <td>fatima@email.com</td>
+                            <td>+968 9222 3333</td>
+                            <td>أساسية</td>
+                            <td><span class="badge paid">نشط</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-outline">تعديل</button>
+                                <button class="btn btn-sm btn-outline" style="color:#e74c3c;">حذف</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>هند الشكيلية</td>
+                            <td>hind@email.com</td>
+                            <td>+968 9333 4444</td>
+                            <td>VIP سنوية</td>
+                            <td><span class="badge paid">نشط</span></td>
+                            <td>
+                                <button class="btn btn-sm btn-outline">تعديل</button>
+                                <button class="btn btn-sm btn-outline" style="color:#e74c3c;">حذف</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== SCRIPTS ==================== -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
+</body>
+</html>
